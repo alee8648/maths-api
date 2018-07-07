@@ -1,9 +1,12 @@
+// External dependencies
 const router = require('express').Router();
 const _ = require('lodash');
 
+// Internal dependencies
+const maths = require('../maths/mathsFunctions.js');
+
 router.get('/', (req,res) => {
-	let result = Math.ceil(Math.random() * 20);
-	res.send(String(result));
+	res.send(String(maths.diceRoll(20)));
 });
 
 module.exports = router;
