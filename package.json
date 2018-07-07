@@ -1,0 +1,17 @@
+{
+  "name": "maths-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=Maths ENV=dev nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10"
+  }
+}
