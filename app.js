@@ -8,6 +8,7 @@ app.all('/', (req, res) => {
 	res.status(404).send('Page could not be found');
 });
 
-app.listen('3000', () => {
-	console.log('starting');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+	console.log(`Starting on port ${port}`);
 });
